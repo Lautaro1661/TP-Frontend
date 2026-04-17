@@ -6,18 +6,19 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f8fafc; /* un fondo claro para toda la página */
+    background-color: #d2f3f0; /* un fondo claro para toda la página */
     min-height: 100vh; /* para que el fondo cubra toda la altura de la pantalla */
     flex-direction: column; /* para que el contenido se apile verticalmente */
-    display: flex;/* para usar flexbox y centrar el contenido */
+    display: flex; 
 
 }
 
 /* HEADER */
 .header {
-    position: sticky; /* para que quede fijo al hacer scroll (no es necesario) */
-    padding: 1rem 2rem;
+    position: sticky;
     top: 0;
+    z-index: 1000; /* importante para que quede por encima */
+    padding: 1rem 2rem;
     background-color: #0f172a; 
     border-bottom: 2px solid #1e293b; 
 }
@@ -41,7 +42,7 @@ body {
 .nav-links {
     list-style: none; /* para eliminar los puntos de la lista */
     display: flex; /* para alinear los enlaces en una fila */
-    gap: 25px; /* para agregar espacio entre los enlaces */
+    gap: 50px; /* para agregar espacio entre los enlaces */
     margin: 0; 
     padding: 0; /* para eliminar el margen y el padding (CAMBIAR ESTO)*/
 }
@@ -75,7 +76,41 @@ body {
 }
 
 .carousel-item img {
-    height: 400px;
+    height: 668px;
     width: 100px;
     object-fit: cover; /* para que la imagen se ajuste al contenedor sin distorsionarse */
 }
+
+/* "Marcas que confian en nosotros" */
+.brands {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8fafc;
+}
+
+.brands-title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #0f172a;
+}
+
+.brands-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* para que las imágenes se ajusten en varias filas si es necesario */
+    width: 100%;
+}
+
+.brands-container img {
+    height: 135px;
+    object-fit: contain;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.brands-container img:hover {
+    opacity: 1;
+}
+
+/* FOOTER */
