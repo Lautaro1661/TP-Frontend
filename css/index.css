@@ -38,7 +38,7 @@ header {
     
 }
 
-/* LINKS */
+/* LINKS del NAV */
 .nav-links {
     list-style: none; /* para eliminar los puntos de la lista */
     display: flex; /* para alinear los enlaces en una fila */
@@ -140,7 +140,7 @@ header {
 
 .highlight {
   color: #22c55e; /* verde que combina con tu paleta */
-  position: relative;
+  
 }
 
 
@@ -151,6 +151,7 @@ header {
   font-weight: 400;
 }
 
+/* Razones para elegirnos (CARDS) */
 .razones-para-elegir {
   padding: 4rem 2rem;
   max-width: 1100px;
@@ -202,7 +203,7 @@ footer {
   background: #1a1a2e;
   color: #9ca3af;
   padding: 3rem 2rem 1.5rem;
-  margin-top: 4rem;
+  margin-top: 0rem;
 }
 
 .footer-contenido {

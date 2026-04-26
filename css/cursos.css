@@ -1,0 +1,65 @@
+ .cursos-section {
+    padding: 45px 32px;
+    background-color: #061525;
+    text-align: center;
+  }
+ 
+  .cursos-section h1 {
+    font-size: 2rem;
+    color: #e8f4f8;
+    margin-bottom: 12px;
+  }
+ 
+  .cursos-section .subtitulo {
+    color: #6b8fa5;
+    font-size: 1rem;
+    margin-bottom: 48px;
+  }
+ 
+  .cursos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+ 
+  .curso-card {
+    background-color: #0b2035;
+    border: 1px solid #173552;
+    border-radius: 12px;
+    overflow: hidden; /* importante para que la imagen respete el border-radius */
+    text-align: left;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+ 
+  .curso-card:hover {
+    border-color: #2ecc8a;
+    transform: translateY(-4px); /* efecto de elevación al pasar el mouse */
+  }
+ 
+  /* ── IMAGEN ── */
+  .curso-card img {
+    width: 100%;       /* ocupa todo el ancho de la card */
+    height: 180px;     /* altura fija para todas las imágenes */
+    object-fit: cover; /* recorta la imagen sin deformarla */
+    display: block;
+  }
+ 
+  /* ── TEXTO ── */
+  .curso-card-body {
+    padding: 24px;
+  }
+ 
+  .curso-card h3 {
+    color: #d6eaf5;
+    font-size: 1.05rem;
+    margin: 0 0 10px;
+  }
+ 
+  .curso-card p {
+    color: #6b8fa5;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin: 0;
+  }
