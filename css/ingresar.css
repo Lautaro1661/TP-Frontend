@@ -1,0 +1,86 @@
+.registro-section {
+    padding: 45px 32px;
+    background-color: #061525;
+  }
+ 
+  .registro-section h1 {
+    font-size: 2rem;
+    color: #e8f4f8;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+ 
+  .registro-form {
+    max-width: 500px;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+ 
+  .campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+ 
+  .campo label,
+  .opciones-label {
+    font-size: 1rem;
+    color: #a8cfe0;
+  }
+ 
+  .campo input,
+  .campo select {
+    padding: 10px 12px;
+    background-color: #0b2035;
+    border: 1px solid #173552;
+    border-radius: 6px;
+    color: #e8f4f8;
+    font-size: 1rem;
+  }
+ 
+  .opciones-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+ 
+  .opcion {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #6b8fa5;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+ 
+  .opcion input {
+    accent-color: #2ecc8a;
+  }
+ 
+  .botones {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+  }
+ 
+  .btn-enviar {
+    flex: 1;
+    padding: 11px;
+    background-color: #2ecc8a;
+    color: #04180e;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+ 
+  .btn-reset {
+    flex: 1;
+    padding: 11px;
+    background-color: transparent;
+    color: #ff0000;
+    border: 1px solid #173552;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
